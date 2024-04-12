@@ -142,8 +142,9 @@
     width: 50vw;
     }
     .modal-body img{
-    max-width: 15vw;
-    min-height: auto;
+    /* max-width: 15vw;
+    min-height: auto; */
+    width: 50px500px;
     margin-bottom: 0px;
     
     }
