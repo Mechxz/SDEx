@@ -1,0 +1,281 @@
+:root{
+    --red:#EE1B24;
+    --black:#000000;
+    --details:#333333;
+    --gray:#919191;
+    --light-gray:#D5D5D5;
+    }
+    
+    @font-face {
+        font-family:Sddystopian ;
+        src: url(assets/fonts/Sddystopian.otf);
+    }
+    @font-face {
+        font-family:Amuro ;
+        src: url(assets/fonts/Amuro.ttf);
+    }
+    
+    
+    body{
+        overflow-x: hidden;
+    }
+    
+    .bg-image-1{
+     background-image: url('assets/Rectangle-3.svg'); 
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+    .logo{
+        margin-top: 20%;
+    }
+    .logo::after{
+        content: " ";
+        height: 1px;
+        width: 55vw;
+        background: var(--black);
+        position: absolute;
+        top: 15%;
+        margin-left: 3%;
+    }
+    .title{
+        font-family: Sddystopian;
+        position: relative;
+        padding-top: 18vh;
+        padding-bottom: 30vh;
+    }
+    h2{
+        color: var(--black);
+        font-size: 64px;
+    }
+    h1{
+        color: var(--red);
+        font-size: 128px;
+        -webkit-text-stroke-color: var(--details) ;
+        -webkit-text-stroke-width: 5px;
+        margin-top: -50px;
+    }
+    
+    
+    .rsfg{
+        max-width: 50vw;
+        min-height: auto;
+        position: absolute;
+        top: 9vh;
+        left: 43vw;
+    }
+    .exg{
+        max-width: 30vw;
+        min-height: auto;
+        position: absolute;
+        top: 65vh;
+        left: 4vw;
+    }
+    
+    .main-intro{
+        font-size: 20px;
+    }
+    .introduction{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        position: relative;
+        width: 80em;
+        padding-left: 15em;
+    }
+    a{
+        color: #000000;
+    }
+    
+    
+    
+    
+    .bg-image-2{
+        background-image: url('assets/Rectangle-4.svg'); 
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+    
+       h5
+       {
+        font-family: Sddystopian;
+        color: var(--red);
+        position: relative;
+        padding-top: 35%;
+        margin-bottom: 50px;
+        font-size: 36px;
+       }
+    
+       h5::after{
+        content: " ";
+        height: 1px;
+        width: 50vw;
+        background: var(--black);
+        display: block;
+        position: absolute;
+        top: 95%;
+        right: 1vw;
+    }
+    
+    .gundam-models{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1440px;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .gundam-models img{
+    max-width: 300px;
+    width: 100%;
+    min-height: auto;
+    margin-bottom: 5vh;
+    }
+    
+    
+    .modal-header{
+        background-color: var(--light-gray);
+    }
+    .modal-dialog{
+        margin-left: 25vw;
+    }
+    .modal-content{
+        width: 100vw;
+    }
+    .modal-body{
+    width: 50vw;
+    }
+    .modal-body img{
+    max-width: 15vw;
+    min-height: auto;
+    margin-bottom: 0px;
+    
+    }
+    
+    .modal-body p{
+        font-size: 18px;
+        font-weight: bold;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    h6{
+        font-family: Sddystopian;
+        color: var(--gray);
+        font-size: 16px;
+    }
+    h3{
+        font-family: Amuro;
+        color: var(--red);
+        font-size: 30px;
+    }
+    
+    .line{
+        content: " ";
+        height: 1px;
+        width: 70vw;
+        background: var(--black);
+        display: block;
+        position: relative;
+        margin: auto;
+    }
+    
+    h4{
+        font-family: Sddystopian;
+        color: var(--red);
+        font-size: 48px; 
+    }
+    
+    .cta {
+        position: relative;
+        text-align: center;
+        max-width:70vw;
+        margin: auto;
+    }
+    .collect{
+        background-color: var(--black);
+        margin: 30px auto;
+        padding: 10px 50px;
+        border-radius: 20px;
+        /* display: flex;
+        justify-content: center;
+        position: relative;
+         */
+    }
+    
+    /* .blur-bg{
+        background-image: url('assets/sdex_aerial4.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        filter: blur(5px);
+        z-index: -1;
+        left: 15vw;
+    } */
+    .aerial{
+        position: absolute;
+        min-width: 80vw;
+        min-height: auto;
+        top: 230vh;
+        left: 30vw;
+        filter: blur(5px);
+        z-index: -1;
+        transform: scale(1.5);
+    }
+    
+    
+    
+    
+    
+    
+    @media screen and (max-width: 1650px) {
+        .introduction{
+            background-color: var(--light-gray) ;
+            opacity: 0.8;
+        }
+        .rsfg{
+            max-width: 55vw;
+            min-height: auto;
+            position: absolute;
+            top: 9vh;
+            left: 43vw;
+        }
+        .exg{
+            top: 75vh;
+        }
+        .aerial{
+            top: 280vh;
+        }
+        /* h5::after{
+            top: 75vh;
+        } */
+    }
+    
+    
+    @media screen and (max-width: 1300px) {
+        .aerial{
+            display: none;
+        }
+        
+    }
+    
+    
+    @media  screen and (max-width: 425px) {
+        .title{}
+        .collect h4{
+            font-size: 25px;
+        }
+        .logo::after{
+            display: none;
+        }
+        .rsfg{
+            top: 60vh;
+            left: 27vw;
+            min-width: 75vw;
+        }
+        .exg{
+            max-width: 30vw;
+            min-height: auto;
+            position: absolute;
+            top: 65vh;
+            left: 4vw;   
+        }
+        .introduction{
+            padding: 20px;
+        }
+    }
