@@ -262,6 +262,9 @@
     
     
     @media  screen and (max-width: 425px) {
+        body{
+            overflow-x: hidden;
+        }
         .logo{
             margin: 20% auto 0%;
             min-width: 50px; /* Set minimum width for the logo */
