@@ -69,7 +69,7 @@
         max-width: 30vw;
         min-height: auto;
         position: absolute;
-        top: 65vh;
+        top: 62vh;
         left: 4vw;
     }
     
@@ -213,7 +213,7 @@
         position: absolute;
         min-width: 80vw;
         min-height: auto;
-        top: 230vh;
+        top: 200vh;
         left: 30vw;
         filter: blur(5px);
         z-index: -1;
@@ -238,7 +238,7 @@
             left: 43vw;
         }
         .exg{
-            top: 75vh;
+            top: 80vh;
         }
         .aerial{
             top: 280vh;
@@ -248,18 +248,102 @@
         } */
     }
     
-    @media  screen and (max-width: 1488px) {
-        
+    @media  screen and (max-width: 1199px) {
+        .logo::after{
+            top: 10%;
+        }
     }
     
     
-    @media screen and (max-width: 1300px) {
+    /* @media screen and (max-width: 1300px) {
         .aerial{
             display: none;
         }
         
+    } */
+
+    @media screen and (max-width: 990px) {
+        .aerial{
+            top: 430vh;
+            left: 20vw;
+        }
+        .logo{
+            margin-top: 10%;
+            display: flex;
+            justify-content: center;
+        }
+        .logo::after{
+            display: none;
+        }
+        .rsfg{
+            top: 50vh;
+        }
+        .exg{
+            max-width: 60vw;
+            min-height: auto;
+            position: absolute;
+            top: 110vh;
+            left: 10vw;   
+            filter: blur(5px);
+        }
+        .introduction{
+            padding: 20px;
+        }
+        h5::after{
+            top: 90%;
+            width: 30vw ;
+        }
+        .modal-body img{
+            min-width: 35vw;
+        }
+        .modal-dialog{
+            margin: auto;  
+        }
+        .modal-content{
+            width: 100%;
+        }
+        .modal-body{
+        width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 975px) {
+        .aerial{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 770px) {
+        .logo{
+            margin-bottom: 10%;
+        }
+        .exg{
+            width: 300vw;
+            position: absolute;
+            top: 100vh;
+            left: 5vw;   
+            filter: blur(5px);
+        }
+        h2{
+            font-size: 60px;
+            margin-bottom: 25px;
+        }
+        h1{
+            font-size: 84px;
+        }
+        .rsfg{
+            top: 50vh;
+        }
+
     }
     
+    @media screen and (max-width: 600px){
+        .exg{
+            width: 500vw;
+            top: 110vh;
+        }
+
+    }
     
     @media  screen and (max-width: 425px) {
         body{
@@ -285,7 +369,7 @@
             display: none;
         }
         .rsfg{
-            top: 30vh;
+            top: 20vh;
             left: 27vw;
             min-width: 75vw;
         }
@@ -293,7 +377,7 @@
             max-width: 100vw;
             min-height: auto;
             position: absolute;
-            top: 105vh;
+            top: 100vh;
             left: 2vw;   
             filter: blur(5px);
         }
