@@ -144,7 +144,7 @@
     width: 50vw;
     }
     .modal-body img{
-    max-width: 15vw;
+    max-width: 20vw;
     min-height: auto;
     margin-bottom: 0px;
     
@@ -294,7 +294,7 @@
             min-height: auto;
             position: absolute;
             top: 105vh;
-            left: 4vw;   
+            left: 2vw;   
             filter: blur(5px);
         }
         .introduction{
@@ -302,6 +302,18 @@
         }
         h5::after{
             display: none;
+        }
+        .modal-body img{
+            min-width: 70vw;
+        }
+        .modal-dialog{
+            margin: 20px 30px;  
+        }
+        .modal-content{
+            width: 100%;
+        }
+        .modal-body{
+        width: 100%;
         }
         .collect {
             font-size: 10px;
